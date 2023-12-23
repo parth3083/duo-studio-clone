@@ -1,0 +1,338 @@
+@font-face {
+    font-family: b;
+    src: url("ppmori-regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: b;
+    cursor: none;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #0f0d0d;
+
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+}
+#nav-part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#nav img{
+    height: 30px;
+}
+#nav-part-2 h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+#nav-part-2 :nth-child(1){
+    border-bottom: 0.5px solid white;
+}
+#nav-part-3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+#page1>h1{
+    color: white;
+    font-size: 8vw;
+    margin-left: 55px;
+    font-weight: 500;
+}
+#page1>h2{
+    color: white;
+    font-size: 8vw;
+    font-weight: 500;
+    margin-left: 360px;
+}
+#page1 video{
+    width: 60%;
+position: relative;
+left: 50%;
+transform: translate(-50%,0);
+    margin-top: 50px;
+}
+#cursor{
+    width: 17px;
+    height: 17px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 8;
+    mix-blend-mode: difference;
+transition: background-image ease 0.5s;
+background-position: center;
+background-size: cover;
+}
+#page2{
+    width: 100%;
+    padding: 100px 5px;
+    border-bottom:  1px solid #0f0d0d;
+}
+#page2>h1{
+    font-size: 5.5vw;
+    font-weight: 300;
+    margin-left: 100px;
+}
+#page2-container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+    margin-top: 40px;
+}
+#page2-left{
+    width: 350px;
+    height: 100%;
+    text-align: left;
+    font-size: 2.15vw;
+    text-transform: uppercase;
+}
+#page2-right{
+    width: 400px;
+    height: 100%;
+}
+#page2-right p{
+    font-size: 1.5vw;
+    text-transform: capitalize;
+}
+#page2-right button{
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    font-weight: 600;
+    margin-top: 30px;
+    background-color: #EDBFFF;
+    color: black;
+    cursor: pointer;
+}
+#page3{
+    width: 100%;
+    padding: 50px 20px;
+    border-bottom:  1px solid #0f0d0d;
+}
+#page3>h1{
+    font-size: 6.25vw;
+    font-weight: 400;
+    margin-left: 60px;
+}
+#page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 70px;
+}
+#page3-part1 img{
+    width: 30%;
+    margin-top: 150px;
+}
+#page3-part1 video{
+    width: 30%;
+    height: 100%;
+}
+#page3-part2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 90px;
+}
+#page3-part2 img{
+    width: 25%;
+    margin-top: 250px;
+}
+#page3-part2 video{
+    width: 20%;
+}
+#page3-part3{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px 120px;
+}
+#page3-part3 img{
+    width: 21%;
+    margin-top: 150px;
+}
+#page3-part3 video{
+    width: 35%;
+}
+#page3-part4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 95px;
+}
+#page3-container{
+    width: fit-content;
+    overflow: hidden;
+}
+#page3-p4-left h1{
+    font-size: 5vw;
+    letter-spacing: -1px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: translateX(-120%);
+    transition: all ease 0.1s;
+}
+#page3-p4-right{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    background-color: #EDBFFF;
+    transition: all ease 0.2s;
+    scale: 0;
+    opacity: 0;
+}
+#page3-p4-right:hover{
+    background-color: #0f0d0d;
+    color: white;
+}
+#page3-p4-right h2{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+#page4{
+    width: 100%;
+    padding: 150px 150px;
+    position: relative;
+    border-bottom: 1px solid white;
+}
+.elem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+.elem h1{
+    font-size: 5vw;
+    font-weight: 400;
+    transition: all ease 0.5s;
+}
+.elem #text-div{
+    height: 80px;
+    overflow: hidden;
+}
+.elem img{
+    position: absolute;
+    width: 350px;
+    transition: all ease 0.5s;
+    transform: translateY(10%) rotate(2deg);
+    opacity: 0;
+}
+.elem img:nth-child(1){
+    left: 2%;
+}
+.elem img:nth-child(3){
+    right: 2%;
+    top:-70%;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translate(0%) rotate(0deg);
+}
+#page5{
+    width: 100%;
+    padding: 50px 50px;
+    border-bottom: 1px solid white;
+}
+#page5>h1{
+    font-size: 5vw;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.p5-elem{
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-top: 1px solid white;
+}
+.p5-elem h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.p5-elem:nth-last-child(1){
+    border-bottom: 1px solid white;
+}
+#page6{
+    height: 65vh;
+    width: 100%;
+    padding: 50px 80px;
+}
+#p6-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+#p6-left h1{
+    font-size: 5.5vw;
+    font-weight: 400;
+    transform: translateX(-120%);
+    transition: all ease 0.1s;
+}
+#p6-right {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    scale: 0;
+    opacity: 0;
+}
+#p6-right:hover h2{
+    color: white;
+}
+#p6-right:hover{
+    background-color: #0f0d0d;
+}
+#p6-right h2{
+    font-size: 2vw;
+    font-weight: 400;
+}
+#p6-cont{
+    width: fit-content;
+    overflow:hidden ;
+}
